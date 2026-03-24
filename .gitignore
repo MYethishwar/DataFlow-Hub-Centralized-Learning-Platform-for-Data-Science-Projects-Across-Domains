@@ -1,7 +1,136 @@
-__pycache__
-logs
-uploads
-.env
-app.log
-info.txt
-data for testing
+# =====================================================
+# Python cache files (never commit compiled Python files)
+# =====================================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# =====================================================
+# Jupyter Notebook checkpoint files
+# These are auto-generated backup files created by Jupyter.
+# They SHOULD NEVER be committed to Git.
+# =====================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+
+# =====================================================
+# Virtual environments (local environments only)
+# =====================================================
+venv/
+venv1/
+env/
+ENV/
+.venv/
+.env/
+
+
+# =====================================================
+# IDE / Editor specific files
+# =====================================================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# =====================================================
+# Logs & debugging files
+# =====================================================
+*.log
+*.tmp
+*.bak
+*.out
+
+
+# =====================================================
+# Build / Distribution directories
+# =====================================================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+
+# =====================================================
+# Datasets (large files – keep locally, not in Git)
+# =====================================================
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.json
+*.xml
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.sav
+
+
+# =====================================================
+# Machine Learning / Model files (large binary files)
+# =====================================================
+*.pth
+*.pt
+*.joblib
+*.model
+*.ckpt
+*.pb
+*.onnx
+
+
+# =====================================================
+# Output & generated result folders
+# These are reproducible and should not be tracked
+# =====================================================
+outputs/
+results/
+reports/
+plots/
+images/
+figures/
+logs/
+
+
+# =====================================================
+# Temporary & cache directories
+# =====================================================
+.cache/
+temp/
+tmp/
+data/tmp/
+data/cache/
+
+
+# =====================================================
+# Configuration / secret files (DO NOT COMMIT)
+# =====================================================
+*.env
+.env.*
+config.json
+secrets.json
+credentials.json
+token.json
+apikey.txt
+
+
+# =====================================================
+# Large project folders (raw data, models, artifacts)
+# =====================================================
+data/
+datasets/
+models/
+checkpoints/
+artifacts/
+touch .gitignore
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+# Ignore all files with a .checkpoint extension
+*.checkpoint
